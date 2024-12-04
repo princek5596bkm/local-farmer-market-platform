@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Farmers Market Platform </title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .farmers-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .products-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form input, form textarea, form button {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to the Local Farmers Market</h1>
+            <p>Fresh products from local farmers directly to your doorstep.</p>
+            <img src="https://via.placeholder.com/600x400?text=Farmers+Market+Image" alt="Farmers Market" class="farmers-img">
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-list">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/600x400?text=Fresh+Fruits" alt="Fresh Fruits">
+                    <h3>Fresh Fruits</h3>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/600x400?text=Vegetables" alt="Vegetables">
+                    <h3>Vegetables</h3>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/600x400?text=Organic+Herbs" alt="Organic Herbs">
+                    <h3>Organic Herbs</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a community of local farmers dedicated to providing fresh, high-quality produce. Our goal is to connect farmers with consumers, creating a more sustainable food system.</p>
+            <img src="https://via.placeholder.com/600x400?text=Farmers+Working" alt="Farmers working" class="farmers-img">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farmers Market. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert('Your message has been sent!');
+        });
+    </script>
+
+</body>
+</html>

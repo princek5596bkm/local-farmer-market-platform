@@ -1,0 +1,16 @@
+PROJECT STRUCTURE 
+LOCAL FARMER MARKET PLACE MANAGEMENT SYSTREM 
+
+farmers-market-app/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── farmersmarket/
+│   │   │   │   │   ├── controller/
+│   │   │   │   │   ├── model/
+│   │   │   │   │   ├── repository/
+│   │   │   │   │   └── service/
+│   │   │   ├── resources/
+│   │   │   │   ├── application.properties
+├── pom.xml
